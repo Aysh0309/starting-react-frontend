@@ -11,8 +11,24 @@ function App() {
   
   //let  counter=69
 function incrementCounter(){
-  counter=counter+1;
-  setCounter(counter)
+  // counter=counter+1;
+  // setCounter(counter)
+
+  // setCounter(counter+1)
+  // setCounter(counter+1)
+  // setCounter(counter+1)
+  // setCounter(counter+1)
+  // setCounter(counter+1)
+//this will increase the counter by only one as the requests in react 
+//are send in the bundle so it will think it as of single request
+
+  setCounter(prevcounter=>prevcounter+1)
+  setCounter(prevcounter=>prevcounter+1)
+  setCounter(prevcounter=>prevcounter+1)
+  setCounter(prevcounter=>prevcounter+1)
+  setCounter(prevcounter=>prevcounter+1)
+//this is the way to do multiple same modification
+
   console.log(counter)
 }
 
